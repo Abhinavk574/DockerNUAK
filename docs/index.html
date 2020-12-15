@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Modern Gradient Design | Responsive Website Design</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="../img/favicon.ico">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400&display=swap" rel="stylesheet">
 </head>
@@ -55,7 +55,7 @@
 <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top">
     <div class="container px-3">
 
-        <a href="index.html" class="navbar-brand"><img src="img/docker%20logo%203%20Edited.png" alt="docker logo 1"></a>
+        <a href="index.html" class="navbar-brand"><img src="../img/docker%20logo%203%20Edited.png" alt="docker logo 1"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
@@ -65,9 +65,9 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="docker.html" class="nav-link active">Docker</a></li>
                 <li class="nav-item"><a href="virtual.html" class="nav-link">Virtualization</a></li>
-                <li class="nav-item"><a href="contian.html" class="nav-link">Containerization</a></li>
+                <li class="nav-item"><a href="contain.html" class="nav-link">Containerization</a></li>
                 <li class="nav-item"><a href="vs.html" class="nav-link">Containerization VS Virtualization</a></li>
-                <li class="nav-item"><a href="tutorials.html" class="nav-link">Docker Tutorials</a></li>
+                <li class="nav-item"><a href="tutorial.html" class="nav-link">Docker Tutorials</a></li>
             </ul>
         </div>
 
@@ -83,7 +83,73 @@
         <div class="col-12 text-center text-uppercase my-5 mb-lg-3">
             <h1 class="text-dark pb-3">
                 <i class="fas fa-bahai"></i>
-                Virtualization vs Containerization
+                Let's Learn Docker
+                <i class="fas fa-bahai"></i>
+            </h1>
+            <div class="border-top border-primary w-50 mx-auto"></div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Three Column Section -->
+<div class="container pb-4">
+    <div class="row pt-3 pb-5 text-center">
+
+        <div class="col-lg-4 p-4">
+            <h3 class="my-4">Containerization</h3>
+            <img src="../img/containerimg2.jpg" alt="container image" class="w-100 rounded">
+            <p class="lead pt-3">
+                Containers are a standardized unit of software that allows developers to isolate their app from its
+                environment, solving the “it works on my machine” headache.
+            </p>
+            <a href="contain.html" class="btn btn-outline-primary btn-md">Learn More</a>
+        </div>
+
+        <div class="col-lg-4 p-4">
+            <h3 class="my-4">Virtualization</h3>
+            <img src="../img/img3car.jpg" alt="container image" class="w-100 rounded">
+            <p class="lead pt-3">
+                the process of running a virtual instance of a computer system in a layer abstracted from the actual
+                hardware. Most commonly, it refers to running multiple operating systems on a computer system
+                simultaneously
+            </p>
+            <a href="virtual.html" class="btn btn-outline-primary btn-md">Learn More</a>
+        </div>
+
+
+        <div class="col-lg-4 p-4">
+            <h3 class="my-4">Difference Both</h3>
+            <img src="../img/cvsv12.jpg" alt="container image" class="w-100 rounded">
+            <p class="lead pt-3">
+                Comparing containerization to virtualization,Advantages and disadvantages. Why most developer nowdays
+                choose containerization over virtualization?
+            </p>
+            <a href="vs.html" class="btn btn-outline-primary btn-md">Learn More</a>
+        </div>
+
+    </div>
+</div>
+<!-- End Three Column Section -->
+
+
+<!-- Start Fixed Background IMG -->
+<div class="fixed-background">
+    <div class="fixed-wrap">
+        <div class="fixed"></div>
+    </div>
+</div>
+<!-- End Fixed Background IMG -->
+
+
+<!-- Heading -->
+<div class="container">
+    <div class="row py-0 py-md-3 py-lg-5">
+
+        <div class="col-12 text-center text-uppercase mt-5">
+            <h1 class="text-dark pb-3">
+                <i class="fas fa-bahai"></i>
+                Docker Tutorials
                 <i class="fas fa-bahai"></i>
             </h1>
             <div class="border-top border-primary w-50 mx-auto"></div>
@@ -98,61 +164,17 @@
 
         <div class="col-lg-6 mb-5 my-lg-auto">
             <h3 class="text-dark mb-3">
-                What is the difference between Virtualization and Containerization?
-            </h3>
-            <p>
-                1. The advantage of multiple copies: one of the major points that differentiate these two processes is
-                containers’ temporary behavior. Many copies of a container can exist at the same time in a system like
-                orchestration. If any containers failed, one can remove that and replace it, and there will be no change
-                or impact on service. Older versions can exist at the same time with the new versions. Removal and
-                replacement of the new versions can be done easily if any operation gets failed.
-            </p>
-            <p>
-                2. Scaling related workloads: There is a vast difference between the scalability of a containerized
-                workload and a virtual workload. The containers contain only those services which are basic in nature
-                and which their functions require, but among those services, one can be a web server like Nginx and
-                virtualization workload system, like cabernets, having the capability of judging that when there is a
-                need of scaling out the number of containers based on the sequence of traffic follows and can copy the
-                images of the container on its own and also remove them from the system.
-            </p>
-            <p>
-                3. Foundation for running an application: the Linux containers format is the foundation for
-                containerization format. So, containerization can only run the Linux application as it will support only
-                the Linux environment.
-            </p>
-            <p>
-                4. Using microservices architecture: Google firstly uses the architecture “microservices” and then by
-                Netflix. One can operate these systems without excluding any single application. In the form of
-                functions, they perform small workloads that may be contacted through API, and they perform different
-                functions. These functions can be seen in traditional applications, although many applications can
-                perform the same functions on repeat.
-            </p>
-        </div>
-
-        <div class="col-lg-6 mb-5 my-lg-auto">
-            <h3 class="text-dark mb-3">
-                Containerization vs Virtualization: Which one is better!
+                Tutorials for New User
             </h3>
             <p class="lead mb-4">
-                The assurance of which is better in Containers versus Virtual Machines (VMs) relies upon your objective.
-                However, virtualization empowers remaining tasks at hand to keep running in situations that are isolated
-                from their basic equipment by a layer of reflection. This reflection enables servers to be separated
-                into VMs that can run distinctive working frameworks.
+                Tutorials on how to setup a web server on your local computer using docker, basic Linux commands and
+                what they do as well as how to log into your docker container, how to connect Docker with Pycharm to
+                write python code.
             </p>
-            <p>
-                Container innovation offers an elective strategy for Virtualization, in which a solitary working
-                framework on a host can run a wide range of users from the cloud. One approach to consider Containers
-                versus VMs is that while VMs run a few distinctive working frameworks on one process hub, while
-                containers offer the chance to virtualize the working framework itself.
-            </p>
-            <p>
-                Containerization and Virtualization differ in many ways, but the primary difference is that containers
-                provide a way to virtualize an OS to run multiple workloads in a single OS instance. With VMs, the
-                hardware is virtualized to run multiple OS instances. The speed, agility, and portability of the
-                container make it another tool to streamline software development.
-            </p>
+            <a href="tutorial.html" class="btn btn-outline-primary btn-lg">Get Started</a>
         </div>
 
+        <div class="col-lg-6"><img src="../img/tutorialsimg1.jpg" alt="tutorial image" class="w-100 rounded"></div>
 
     </div>
 </div>
@@ -165,7 +187,7 @@
         <div class="row text-light text-center py-4">
 
             <div class="col-lg-4 px-4 my-auto">
-                <img src="img/docker%20logo%203%20Edited.png" alt="docker logo">
+                <img src="../img/docker%20logo%203%20Edited.png" alt="docker logo">
                 <p class="lead">Docker for New User Website!</p>
 
                 <ul class="social pt-3 pb-4 pb-lg-auto">
@@ -213,13 +235,13 @@
 <!-- Script Source Files -->
 
 <!-- jQuery -->
-<script src="js/jquery-3.4.1.min.js"></script>
+<script src="../js/jquery-3.4.1.min.js"></script>
 <!-- Bootstrap JS -->
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <!-- Popper JS -->
-<script src="js/popper.min.js"></script>
+<script src="../js/popper.min.js"></script>
 <!-- Font Awesome -->
-<script src="js/all.min.js"></script>
+<script src="../js/all.min.js"></script>
 
 <!-- End Script Source Files -->
 </body>
