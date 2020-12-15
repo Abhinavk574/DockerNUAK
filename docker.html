@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modern Gradient Design | Responsive Website Design</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Start Landing Page-->
+<div class="landing">
+    <h4>Docker for New User Guide</h4>
+    <h1>Welcome to my docker website</h1>
+
+    <div class="row home justify-content-center px-md-5px-lg-0">
+
+        <div class="col-3 col-sm-2 col-lg-1 p-0">
+				<span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-docker fa-stack-1x fa-inverse"></i>
+                </span>
+        </div>
+        <div class="col-3 col-sm-2 col-lg-1 p-0">
+				<span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-network-wired fa-stack-1x fa-inverse"></i>
+                </span>
+        </div>
+        <div class="col-3 col-sm-2 col-lg-1 p-0">
+				<span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-box-open fa-stack-1x fa-inverse"></i>
+                </span>
+        </div>
+        <div class="col-3 col-sm-2 col-lg-1 p-0">
+				<span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-photo-video fa-stack-1x fa-inverse"></i>
+                </span>
+        </div>
+    </div>
+</div>
+<!-- End Landing Page -->
+
+
+<!-- Navigation -->
+<nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top">
+    <div class="container px-3">
+
+        <a href="index.html" class="navbar-brand"><img src="img/docker%20logo%203%20Edited.png" alt="docker logo 1"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="docker.html" class="nav-link active">Docker</a></li>
+                <li class="nav-item"><a href="virtual.html" class="nav-link">Virtualization</a></li>
+                <li class="nav-item"><a href="contian.html" class="nav-link">Containerization</a></li>
+                <li class="nav-item"><a href="vs.html" class="nav-link">Containerization VS Virtualization</a></li>
+                <li class="nav-item"><a href="tutorials.html" class="nav-link">Docker Tutorials</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<!-- End Navigation -->
+
+
+<!-- Heading -->
+<div class="container">
+    <div class="row py-0 py-md-3 py-lg-5">
+
+        <div class="col-12 text-center text-uppercase my-5 mb-lg-3">
+            <h1 class="text-dark pb-3">
+                <i class="fas fa-bahai"></i>
+                Docker
+                <i class="fas fa-bahai"></i>
+            </h1>
+            <div class="border-top border-primary w-50 mx-auto"></div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Two Column Section -->
+<div class="container pb-5">
+    <div class="row pt-3 pb-3 px-4">
+
+        <div class="col-lg-6 mb-5 my-lg-auto">
+            <h3 class="text-dark mb-3">
+                What is Docker?
+            </h3>
+            <p class="lead mb-4">
+                There are two ways of looking at Docker. The first approach involves seeing Docker containers as really
+                lightweight virtual machines, while the second approach is to see Docker as a software packaging and
+                delivery platform. This latter approach has proven a lot more helpful to human developers and resulted
+                in widespread adoption of the technology.
+
+            </p>
+            <p>
+                Traditionally, cloud service providers used virtual machines to isolate running applications from one
+                another. A hypervisor, or host operating system, provides virtual CPU, memory and other resources to
+                many guest operating systems. Each guest OS works as if it is running on an actual physical hardware and
+                it is, ideally, unaware of other guests running on the same physical server.
+            </p>
+            <p>
+                However there are several problems with virtualization. First, the provisioning of resources takes time.
+                Each virtual disk image is large and bulky and getting a VM ready for use can take up to a minute.
+                Second—and a more important issue—system resources are used inefficiently. OS kernels are control freaks
+                that want to manage everything that’s supposedly available to them. So when a guest OS thinks 2GB of
+                memory is available to it, it takes control of that memory even if the applications running on that OS
+                uses only half of it.
+            </p>
+            <p>
+                On the other hand, when we run containerized applications, we virtualize the operating system (your
+                standard libraries, packages, etc.) itself, not the hardware. Now, instead of providing virtual hardware
+                to a VM, you provide a virtual OS to your application. You can run multiple applications and impose
+                limitations on their resource utilization if you want, and each application will run oblivious to the
+                hundreds of other containers it is running alongside.
+            </p>
+
+        </div>
+
+        <div class="col-lg-6"><img src="img/Docker%202.png" alt="Docker diagram" class="w-100 rounded"></div>
+
+    </div>
+</div>
+<!-- End Two Column Section -->
+
+
+<!-- Start Footer -->
+<footer class="mt-4">
+    <div class="container">
+        <div class="row text-light text-center py-4">
+
+            <div class="col-lg-4 px-4 my-auto">
+                <img src="img/docker%20logo%203%20Edited.png" alt="docker logo">
+                <p class="lead">Docker for New User Website!</p>
+
+                <ul class="social pt-3 pb-4 pb-lg-auto">
+                    <li><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+
+
+            </div>
+
+            <div class="col-lg-4 px-4 my-4">
+                <h3 class="border-top border-bottom w-75 mx-auto py-2 mb-3">Helpful Links</h3>
+                <p><a href="https://www.docker.com/resources/what-container" target="_blank" rel="noopenernoreferrer">Docker
+                    Resource</a></p>
+                <p><a href="https://containerd.io/" target="_blank" rel="noopenernoreferrer">Containerd</a></p>
+                <p><a href="https://www.docker.com/why-docker" target="_blank" rel="noopenernoreferrer">Why Docker</a>
+                </p>
+
+            </div>
+
+            <div class="col-lg-4 px-4 my-4">
+                <h3 class="border-top border-bottom w-75 mx-auto py-2 mb-3">Team</h3>
+                <p>Website made by Abhinav Kapoor</p>
+                <p><a href="mailto:+ak56@njit.edu">NJIT Email</a></p>
+                <p>This a Docker for New User Website</p>
+
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+
+<!-- Start Socket -->
+<div class="socket">
+    <p>&copy; <a href="https://portal.njit.edu/" target="_blank" rel="noopenernoreferrer">NJIT Portal</a></p>
+</div>
+<!-- End Socket -->
+
+
+<!-- Script Source Files -->
+
+<!-- jQuery -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Popper JS -->
+<script src="js/popper.min.js"></script>
+<!-- Font Awesome -->
+<script src="js/all.min.js"></script>
+
+<!-- End Script Source Files -->
+</body>
+</html>
